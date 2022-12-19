@@ -58,10 +58,12 @@ BUTTONS
 HEADER
 ************/
 
+header {
+    justify-content: flex-end;
+    height: 8vh;
+}
+
 .view {
-    position: absolute;
-    top: 0;
-    right: 0;
     padding: 0.5rem;
 }
 
@@ -71,9 +73,9 @@ MAIN
 
 .container {
     margin: 0 auto;
-    padding: 8vh;
+    padding: 2vh 0;
     width: 80vw;
-    height: 80vh;
+    height: 82vh;
 }
 
 .row-cols-7 {
@@ -116,13 +118,14 @@ BOTTOM NAVBAR
 ************/
 
 .bottom-navbar {
-    height: 8vh;
+    height: 10vh;
     width: 100%;
     background-color: #252525;
 }
 
 .row-cols-3 {
     justify-content: space-between;
+    align-items: center;
 }
 
 .row-cols-3 .col {
@@ -138,6 +141,7 @@ BOTTOM NAVBAR
     font-size: 1rem;
     color: white;
     display: inline-block;
+    padding: 0 3px;
 }
 
 .nav-icon,
@@ -158,19 +162,18 @@ BOTTOM NAVBAR
 
 .primary-button {
     flex-basis: calc(100%*4/5);
-    height: 8vh;
+    height: 9vh;
 }
 
 .scroll-button {
     flex-basis: calc(100%*1/5);
-    line-height: 8vh;
+    line-height: 10vh;
 }
 
 .col3>.nav-end-meeting-button {
-    line-height: 8vh;
+    line-height: 10vh;
     background-color: #2d2d2d;
     padding: 0 15px;
 }
 
-
-
+/* sembra che il mio viewport sia alto più di 100vh... */
