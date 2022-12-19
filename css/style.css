@@ -111,3 +111,66 @@ MAIN
     margin-left: 0.5rem;
 }
 
+/*********** 
+BOTTOM NAVBAR
+************/
+
+.bottom-navbar {
+    height: 8vh;
+    width: 100%;
+    background-color: #252525;
+}
+
+.row-cols-3 {
+    justify-content: space-between;
+}
+
+.row-cols-3 .col {
+    height: 100%;
+}
+
+.row-cols-3 .col2 {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.nav-button {
+    font-size: 1rem;
+    color: white;
+    display: inline-block;
+}
+
+.nav-icon,
+.button-desc {
+    display: block;
+}
+
+.nav-icon {
+    font-size: 1.8rem;
+}
+.primary-button,
+.scroll-button,
+.nav-end-meeting-button {
+    background-color: #252525;
+    border: none;
+    color: white;
+}
+
+.primary-button {
+    flex-basis: calc(100%*4/5);
+    height: 8vh;
+}
+
+.scroll-button {
+    flex-basis: calc(100%*1/5);
+    line-height: 8vh;
+}
+
+.col3>.nav-end-meeting-button {
+    line-height: 8vh;
+    background-color: #2d2d2d;
+    padding: 0 15px;
+}
+
+
+
