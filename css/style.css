@@ -8,7 +8,11 @@ body {
     background-color: black;
     height: 100vh;
     font-family: sans-serif;
+    overflow: hidden;
 }
+
+/* grazie ad overflow: hidden, tutto il contenuto che esce dal body,
+non genererà la scroll bar. */
 
 /*********** 
 UTILITY CLASS
@@ -54,12 +58,16 @@ BUTTONS
     font-size: 1.2rem;
 }
 
+
+
 /*********** 
 HEADER
 ************/
 
 header {
-    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    right: 0;
     height: 8vh;
 }
 
@@ -71,11 +79,15 @@ header {
 MAIN
 ************/
 
+main {
+    height: calc(100vh-10vh);
+}
+
 .container {
     margin: 0 auto;
-    padding: 2vh 0;
+    padding-top: 6vh;
     width: 80vw;
-    height: 82vh;
+    height: 90vh;
 }
 
 .row-cols-7 {
