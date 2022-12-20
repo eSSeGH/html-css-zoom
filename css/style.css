@@ -58,7 +58,10 @@ BUTTONS
     font-size: 1.2rem;
 }
 
-
+button:not(.nav-button):hover {
+    box-shadow: 0 0 8px inset white;
+    border-radius: 5px;
+}
 
 /*********** 
 HEADER
@@ -170,6 +173,7 @@ BOTTOM NAVBAR
     background-color: #252525;
     border: none;
     color: white;
+    shrink: 0;
 }
 
 .primary-button {
